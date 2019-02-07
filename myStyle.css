@@ -1,0 +1,61 @@
+body{
+	background: gray;
+	font-family: arial;
+}
+
+h1{
+	background: white;
+	text-align: center;
+}
+h2 {
+	text-align: left;
+	padding-left: 10px;
+	font-size: 20px;
+	
+}
+h3{
+	text-align: right;
+	padding-right: 10px;
+	color: gray;
+}
+p{
+	padding-left: 10px;
+}
+.wraper{
+
+}
+
+.flexbox {
+	display: grid;
+	grid-template-columns: [col] 200px [col] 200px;
+	grid-template-rows: [row] 70px [row] auto [row] auto;
+	justify-content: center;
+}
+
+.feed {
+	background-color: white;
+
+}
+
+.title {
+		grid-column: col 1 ;
+		grid-row: row;
+
+}
+
+.date {
+		grid-column: col 2 ;
+		grid-row: row;
+		
+
+}
+
+.photo {
+		grid-column: col 1 / span 2;
+		grid-row: row 2;
+}
+
+.comment {
+		grid-column: col 1 / span 2 ;
+		grid-row: row 3;
+}
